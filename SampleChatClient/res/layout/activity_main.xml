@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your name" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect and get online user" />
+
+        <EditText
+            android:id="@+id/edtChatWith"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chat with" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_below="@+id/login"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtIpServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Server: " />
+
+        <TextView
+            android:id="@+id/txtIpClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client (Me):" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#567345" />
+
+        <TextView
+            android:id="@+id/txtContent"
+            android:text="as"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btnSubmit"
+        android:hint="Text" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="OK" />
+
+</RelativeLayout>
